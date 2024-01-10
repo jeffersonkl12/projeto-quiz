@@ -7,24 +7,24 @@ const Result = () => {
     return (
         <>
             <div id='result-container'>
-                <Flex>
-                    <div style={{
-                    }}>
+                <Flex aling='center'
+                    h={'100%'}>
+                    <div className='result-container__item'>
                         <CircularProgress colour='#6FD0D7'
-                            percentage={75}/>
+                            percentage={75} />
                     </div>
-                    <div className='result__content'>
-                        <div>
+                    <Flex column>
+                        <div className='result-container__item'>
                             <Texto weight='700'
                                 color='#4E5C66'>Good Result!</Texto>
                         </div>
-                        <div>
+                        <div className='result-container__item'>
                             <Texto weight='400'
                                 color='#4E5C66'
                                 fontSize={'12px'}>Share your achievement
                                 with your friend</Texto>
                         </div>
-                    </div>
+                    </Flex>
                 </Flex>
             </div>
         </>

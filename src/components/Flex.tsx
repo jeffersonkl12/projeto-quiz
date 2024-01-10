@@ -4,22 +4,28 @@ interface Props {
     children?: React.ReactNode,
     justify?:  string,
     aling?:  string,
-    row?:  boolean,
+    column?:  boolean,
+    w?: string | number,
+    h?: string | number
 }
 
 
 
 const Flex = ({ children,
+    w,
+    h,
     justify = 'flex-start',
     aling = 'flex-start',
-    row = true }: Props) => {
+    column = false }: Props) => {
     return (
         <>
             <div className="flex-container"
                 style={{ display: 'flex',
                     justifyContent: justify,
                     alignItems: aling,
-                    flexDirection: row ? 'row': 'column'}}>
+                    flexDirection: column ? 'column': 'row',
+                    width: w,
+                    height: h}}>
                 {children}
             </div>
         </>

@@ -2,7 +2,11 @@
     background-color: var(--azul-palido);
     height: 112px;
 }
+.result-container__item:nth-child(1){
+    margin-right: 40px;
+    margin-left: 1.2rem;
+}
 
-.result__content div:last-of-type {
+.result-container__item:last-of-type {
     width: 150px;
 }
