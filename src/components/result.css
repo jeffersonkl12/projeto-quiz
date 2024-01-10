@@ -1,0 +1,8 @@
+#result-container{
+    background-color: var(--azul-palido);
+    height: 112px;
+}
+
+.result__content div:last-of-type {
+    width: 150px;
+}

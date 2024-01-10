@@ -1,0 +1,9 @@
+.homer__header-nome {
+    color: var(--cinza);
+    font-weight: 500;
+}
+
+.homer__header-nome label {
+    color: var(--cinza-escuro);
+    font-weight: 600;
+}
