@@ -7,11 +7,12 @@ interface Props {
     fontStyle?: string,
     weight?: string,
     secondary?: boolean,
-    aling?: boolean
+    aling?: boolean,
+    family?: string
 
 }
 
-const Texto = ({ children, fontSize, color, fontStyle, weight, aling = false, secondary = false }: Props) => {
+const Texto = ({ children, fontSize, color, fontStyle, weight, aling = false, secondary = false, family = 'Montserrat' }: Props) => {
     return (
         <>
             <p id='texto-container'
@@ -21,7 +22,8 @@ const Texto = ({ children, fontSize, color, fontStyle, weight, aling = false, se
                     color: color,
                     fontStyle: fontStyle,
                     fontWeight: weight,
-                    textAlign: aling ? 'center': undefined
+                    textAlign: aling ? 'center' : undefined,
+                    fontFamily: family ? family: 'sans-serif'
                 }}>
                 {children}
             </p>

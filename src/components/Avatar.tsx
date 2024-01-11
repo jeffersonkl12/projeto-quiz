@@ -1,5 +1,4 @@
 import './avatar.css';
-import Default from '../assets/imgs/default.png';
 
 interface Props {
     src?: string,
@@ -10,9 +9,13 @@ const Avatar = ({ src,
     alt = 'foto default avatar' }: Props) => {
     return (
         <>
-            <div className='avatar-container'>
-                <img src={src ? src: Default}
-                    alt={alt} />
+            <div className='avatar-container'
+                style={{ backgroundColor: src ? undefined : '#C4C4C4' }}>
+                {
+                    src ? <img className={src}
+                        src={src}
+                        alt={alt} /> : undefined
+                }
             </div>
         </>
     )

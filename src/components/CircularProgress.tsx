@@ -46,6 +46,7 @@ const Text = ({ percentage }: textProps) => {
             fontWeight={600}
             fontSize={"0.9rem"}
             fill='#4E5C66'
+            fontFamily='Montserrat'
         >
             {percentage.toFixed(0)}%
         </text>
