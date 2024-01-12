@@ -5,7 +5,7 @@ const Template = () => {
     return (
         <>
             <div className="template-container">
-                <Outlet/>
+                <Outlet />
             </div>
         </>
     )

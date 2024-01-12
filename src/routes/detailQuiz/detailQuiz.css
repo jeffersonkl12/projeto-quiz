@@ -1,21 +1,21 @@
-.header__titulo{
+.header__titulo {
     margin-left: 1.5rem;
 }
 
-.detail-quiz__card-container{
+.detail-quiz__card-container {
     margin-top: 2rem;
 }
 
-.detail-quiz__detail{
+.detail-quiz__detail {
     margin-top: 3.7rem;
 }
 
 .detail-quiz__explanation,
-.detail-quiz__explanation-detail{
+.detail-quiz__explanation-detail {
     margin-top: 1.5rem;
 }
 
-.detail-quiz__explanation-detail__lista{
+.detail-quiz__explanation-detail__lista {
     list-style: disc;
 }
 
@@ -23,17 +23,17 @@
     margin-top: 1.5rem;
 }
 
-.detail-quiz__footer{
+.detail-quiz__footer {
     margin-top: 6.2rem;
 }
 
 /* detail quiz css*/
 
-.detail-quiz__container{
+.detail-quiz__container {
     padding: 1rem;
 }
 
-.detail-quiz__icon{
+.detail-quiz__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,10 +48,10 @@
     height: 24px;
 }
 
-.detail-quiz__info{
+.detail-quiz__info {
     margin-left: 1rem;
 }
 
-.detail-quiz__info > div:last-child {
+.detail-quiz__info>div:last-child {
     margin-top: 0.5rem;
 }

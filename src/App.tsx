@@ -12,19 +12,19 @@ import Quiz from "./routes/quiz/Quiz";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Template/>,
+    element: <Template />,
     children: [
       {
         path: '',
-        element: <Home/>
+        element: <Home />
       },
       {
         path: 'detalhe-quiz',
-        element: <DetailQuiz/>
+        element: <DetailQuiz />
       },
       {
         path: 'quiz',
-        element: <Quiz/>
+        element: <Quiz />
       }
     ]
   }

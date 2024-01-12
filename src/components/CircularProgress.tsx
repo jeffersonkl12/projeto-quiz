@@ -12,18 +12,18 @@ interface circleProps {
 }
 
 const Circle = ({ colour, percentage = 0 }: circleProps) => {
-    const r = 35; // Ajuste o raio conforme necessário
+    const r = 35;
     const circ = 2 * Math.PI * r;
     const strokePct = ((100 - percentage) * circ) / 100;
     return (
         <>
             <circle
                 r={r}
-                cx={40} // Ajuste o centro conforme necessário
-                cy={40} // Ajuste o centro conforme necessário
+                cx={40}
+                cy={40}
                 fill="transparent"
                 stroke={strokePct !== circ ? colour : "white"}
-                strokeWidth={"0.6rem"} // Ajuste a largura da linha conforme necessário
+                strokeWidth={"0.6rem"}
                 strokeDasharray={circ}
                 strokeDashoffset={percentage ? -strokePct : 0}
                 strokeLinecap='round'

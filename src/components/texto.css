@@ -1,8 +1,4 @@
-#texto-container{
+.texto-container {
     color: var(--cinza-escuro);
     font-size: 16px;
-}
-
-#texto-container.secondary{
-    color: var(--cinza);
 }

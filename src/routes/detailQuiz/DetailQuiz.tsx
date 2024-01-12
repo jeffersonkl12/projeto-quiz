@@ -4,7 +4,6 @@ import Flecha from '../../assets/imgs/icon-flecha.png';
 import Menu from '../../assets/imgs/icon-menu.png';
 import Texto from '../../components/Texto';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import Bola from '../../assets/imgs/icon-bola.png';
 import LivroInfo from '../../assets/imgs/icon-info.png';
 import Relgoio from '../../assets/imgs/icon-relogio.png';
 import CardTipoQuiz from '../../components/CardTipoQuiz';
@@ -73,16 +72,12 @@ const Header = () => {
     )
 };
 
-interface detailQuizProps {
-    cardTipoProp?: React.ReactNode
-};
-
-const DetailQuiz = ({cardTipoProp}: detailQuizProps) => {
+const DetailQuiz = () => {
     const navigate = useNavigate();
     const { state } = useLocation();
 
     const onClickButtonSimple = () => {
-        navigate('../quiz',{state: {titulo: state.cardTipoProp.titulo}});
+        navigate('../quiz', { state: { titulo: state.cardTipoProp.titulo } });
     };
 
     return (
@@ -95,7 +90,7 @@ const DetailQuiz = ({cardTipoProp}: detailQuizProps) => {
                         titulo={state.cardTipoProp.titulo}
                         label={state.cardTipoProp.label}
                         nota={state.cardTipoProp.nota} />
-                        
+
                 </div>
                 <div className='detail-quiz__detail'>
                     <div>
@@ -137,7 +132,7 @@ const DetailQuiz = ({cardTipoProp}: detailQuizProps) => {
                     <div className='detail-quiz__footer'>
                         <Flex aling='center'
                             justify='center'>
-                            <ButtonSimple onClick={onClickButtonSimple}/>
+                            <ButtonSimple onClick={onClickButtonSimple}>Get Started</ButtonSimple>
                         </Flex>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import "./texto.css";
 
 interface Props {
     children?: React.ReactNode,
-    fontSize?: string | number 
+    fontSize?: string | number
     color?: string,
     fontStyle?: string,
     weight?: string,
@@ -18,11 +18,10 @@ const Texto = ({ children, fontSize, color = '--cinza-escuro', fontStyle, weight
 
     return (
         <>
-            <p id='texto-container'
-                className={secondary ? 'secondary' : ''}
+            <p className={'texto-container'}
                 style={{
                     fontSize: fontSize,
-                    color: `var(${color})`,
+                    color: secondary ? 'var(--cinza)' : `var(${color})`,
                     fontStyle: fontStyle,
                     fontWeight: weight,
                     textAlign: aling ? 'center' : undefined,

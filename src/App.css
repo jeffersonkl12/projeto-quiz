@@ -1,20 +1,22 @@
 :root {
-    font-size: 16px;
-    --cinza: #999999;
-    --cinza-escuro: #333333;
-    --cinza-claro: #C4C4C4;
-    --azul-palido: #e1f2ff;
-    --azul-claro: #21BDCA;
-  }
+  font-size: 16px;
+  --cinza: #999999;
+  --cinza-escuro: #333333;
+  --cinza-claro: #C4C4C4;
+  --cinza-neutro: #D4D4D4;
+  --azul-palido: #e1f2ff;
+  --azul-claro: #21BDCA;
+  --auzl-gelo: #e1f1f2;
+  --vermelho-vivo: #ff6967;
+  --rosa-neutro: #f6e5e5;
+  --verde-azulado: #009698;
+  --verde-jade: #219553;
+}
 
-  .links {
-    text-decoration: none;
-  }
-  
-  *{
-    box-sizing: border-box;
-  }
-  
-  body {
-    overflow-x:hidde
-  }
+.links {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

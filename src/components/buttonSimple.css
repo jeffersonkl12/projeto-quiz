@@ -1,5 +1,5 @@
-.button-simple{
-    width: 327px;
+.button-simple {
+    width: 100%;
 
     background-color: var(--azul-claro);
     border: 1px solid transparent;
@@ -10,4 +10,10 @@
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 600;
+}
+
+.button-simple.secondary {
+    background-color: transparent;
+    border: 1px solid var(--azul-claro);
+    color: var(--azul-claro);
 }
