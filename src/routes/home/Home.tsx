@@ -24,7 +24,7 @@ interface cardQuizProps {
 const CardQuiz = ({ icon, titulo, progress, corProgress }: cardQuizProps) => {
     return (
         <>
-            <div id='card-quiz'>
+            <div className='card-quiz'>
                 <div className='card-quiz__icon'>
                     <img src={icon} />
                 </div>
@@ -48,7 +48,7 @@ const CardQuiz = ({ icon, titulo, progress, corProgress }: cardQuizProps) => {
 const Result = () => {
     return (
         <>
-            <div id='result-container'>
+            <div className='result-container'>
                 <Flex aling='center'
                     h={'100%'}>
                     <div className='result-container__progress'>

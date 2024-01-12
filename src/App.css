@@ -13,6 +13,10 @@
   --verde-jade: #219553;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .links {
   text-decoration: none;
 }

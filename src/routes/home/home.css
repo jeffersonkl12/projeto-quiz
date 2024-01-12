@@ -44,7 +44,7 @@
 
 /* result-css */
 
-#result-container {
+.result-container {
     padding: 1rem;
     border-radius: 10px;
     background-color: var(--azul-palido);
@@ -65,7 +65,7 @@
 
 /* card-quiz css */
 
-#card-quiz {
+.card-quiz {
     background-color: #fafafd;
     width: 9.7rem;
     height: 152px;

@@ -1,5 +1,3 @@
-import './circularProgress.css';
-
 const cleanPercentage = (percentage: number) => {
     const isNegativeOrNaN = !Number.isFinite(+percentage) || percentage < 0;
     const isTooHigh = percentage > 100;
