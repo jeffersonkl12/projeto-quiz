@@ -1,0 +1,13 @@
+.button-simple{
+    width: 327px;
+
+    background-color: var(--azul-claro);
+    border: 1px solid transparent;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+}

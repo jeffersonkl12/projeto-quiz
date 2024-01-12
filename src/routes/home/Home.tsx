@@ -4,7 +4,6 @@ import Flex from '../../components/Flex';
 import Sino from '../../assets/imgs/icon-sino.png';
 import Livro from '../../assets/imgs/icon-livro.png';
 import Falante from '../../assets/imgs/icon-falante.png';
-import Estrela from '../../assets/imgs/icon-star.png';
 import Computador from '../../assets/imgs/icon-pc.png';
 import Bola from '../../assets/imgs/icon-bola.png';
 import Nota from '../../assets/imgs/icon-nota.png';
@@ -12,6 +11,8 @@ import './home.css';
 import Texto from '../../components/Texto';
 import Progress from '../../components/Progress';
 import Default from '../../assets/imgs/default.png';
+import { Link } from 'react-router-dom';
+import CardTipoQuiz from '../../components/CardTipoQuiz';
 
 interface cardQuizProps {
     icon?: string,
@@ -88,54 +89,7 @@ const Titulo = ({ children }: tituloProps) => {
     )
 };
 
-interface cardTipoQuizProps {
-    bg?: string,
-    icon?: string,
-    titulo?: string,
-    label?: string,
-    nota?: number
-};
 
-const CardTipoQuiz = ({ bg, icon, titulo, label, nota }: cardTipoQuizProps) => {
-    return (
-        <>
-            <div className='card-tipo-quiz__container'>
-                <Flex justify='space-between'
-                    aling='center'>
-                    <div className='card-tipo-quiz__content'>
-                        <Flex aling='center'>
-                            <div className='card-tipo-quiz__content-icon'
-                                style={{ backgroundColor: bg }}>
-                                <img src={icon} />
-                            </div>
-                            <div className='card-tipo-quiz__content-info'>
-                                <div>
-                                    <Texto fontSize={14}
-                                        weight='600'>{titulo}</Texto>
-                                </div>
-                                <div>
-                                    <Texto secondary
-                                        fontSize={12}>{label}</Texto>
-                                </div>
-
-                            </div>
-                        </Flex>
-                    </div>
-                    <div className='card-tipo-quiz__nota'>
-                        <Flex aling='center'>
-                            <div className='card-tipo-quiz__nota-estrela'>
-                                <img src={Estrela} />
-                            </div>
-                            <div className='card-tipo-quiz__nota-info'>
-                                <Texto family='Nunito'>{nota}</Texto>
-                            </div>
-                        </Flex>
-                    </div>
-                </Flex>
-            </div>
-        </>
-    )
-};
 
 const Home = () => {
     return (
@@ -145,7 +99,7 @@ const Home = () => {
                     <Flex justify='space-between'
                         aling='center'>
                         <Flex aling='center'>
-                            <Avatar/>
+                            <Avatar />
                             <div className='homer__header-nome'>
                                 <p>Hello, <label>Jessica</label></p>
                             </div>
@@ -179,25 +133,61 @@ const Home = () => {
                         <div className='popular-quiz__tipos'>
                             <Flex column>
                                 <div className='popular-quiz__tipos-item'>
-                                    <CardTipoQuiz bg='#FFE3BE'
-                                        icon={Computador}
-                                        titulo='Technology'
-                                        label='10 Question'
-                                        nota={4.8} />
+                                    <Link className='links'
+                                        to={'./detalhe-quiz'}
+                                        state={{
+                                            cardTipoProp: {
+                                                bg: '#FFE3BE',
+                                                icon: Computador,
+                                                titulo: 'Technology',
+                                                label: '10 Question',
+                                                nota: 4.8
+                                            }
+                                        }}>
+                                        <CardTipoQuiz bg='#FFE3BE'
+                                            icon={Computador}
+                                            titulo='Technology'
+                                            label='10 Question'
+                                            nota={4.8} />
+                                    </Link>
                                 </div>
                                 <div className='popular-quiz__tipos-item'>
-                                    <CardTipoQuiz bg='#EAEEFF'
-                                        icon={Bola}
-                                        titulo='Sport'
-                                        label='10 Question'
-                                        nota={4.8} />
+                                    <Link className='links'
+                                        to={'./detalhe-quiz'}
+                                        state={{
+                                            cardTipoProp: {
+                                                bg: '#EAEEFF',
+                                                icon: Bola,
+                                                titulo: 'Sport',
+                                                label: '10 Question',
+                                                nota: 4.8
+                                            }
+                                        }}>
+                                        <CardTipoQuiz bg='#EAEEFF'
+                                            icon={Bola}
+                                            titulo='Sport'
+                                            label='10 Question'
+                                            nota={4.8} />
+                                    </Link>
                                 </div>
                                 <div className='popular-quiz__tipos-item'>
-                                    <CardTipoQuiz bg='#F6E5E5'
-                                        icon={Nota}
-                                        titulo='Music'
-                                        label='10 Question'
-                                        nota={4.8} />
+                                    <Link className='links'
+                                        to={'./detalhe-quiz'}
+                                        state={{
+                                            cardTipoProp: {
+                                                bg: '#F6E5E5',
+                                                icon: Nota,
+                                                titulo: 'Music',
+                                                label: '10 Question',
+                                                nota: 4.8
+                                            }
+                                        }}>
+                                        <CardTipoQuiz bg='#F6E5E5'
+                                            icon={Nota}
+                                            titulo='Music'
+                                            label='10 Question'
+                                            nota={4.8} />
+                                    </Link>
                                 </div>
                             </Flex>
                         </div>

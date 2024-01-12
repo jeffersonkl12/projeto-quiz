@@ -104,34 +104,3 @@
 }
 
 /* card tipo quiz */
-
-.card-tipo-quiz__container {
-    width: 20.4rem;
-    height: 82px;
-    padding: 1rem;
-    border-radius: 10px;
-}
-
-.card-tipo-quiz__content-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    padding: 9px;
-}
-
-.card-tipo-quiz__content-info {
-    margin-left: 1rem;
-}
-
-.card-tipo-quiz__content-info>div:last-child {
-    margin-top: 0.5rem;
-}
-
-.card-tipo-quiz__nota-info {
-    margin-left: 4px;
-}
-
-.card-tipo-quiz__nota-info p {
-    font-family: 'Nunito', sans-serif;
-}
